@@ -232,6 +232,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
 
+.navBrand {
+  color: #fff !important;
+}
 
 .App {
   text-align: center;

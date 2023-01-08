@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import navicon1 from '../assets/img/nav-icon1.svg';
@@ -27,7 +28,7 @@ export const NavBar = () => {
     return (
          <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
       <Container>
-        <Navbar.Brand href="#home">Stephan Exius</Navbar.Brand>
+        <Navbar.Brand className = "navBrand" href="#home">Stephan Exius</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggle-icon"></span>
            </Navbar.Toggle>
@@ -41,7 +42,7 @@ export const NavBar = () => {
             <div className="social-icon">
               <a href="#"><img src={navicon1} alt="" /></a>
             </div>
-            <button className="vvd" onClick={() => console.log('connect')}><span>Let's connect</span></button>
+            <button className="vvd" onClick={() => console.log('connect')}><span>Let's connect      </span></button>
           </span>
         </Navbar.Collapse>
       </Container>
