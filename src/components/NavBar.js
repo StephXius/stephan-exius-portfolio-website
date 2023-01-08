@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Navbar, Container } from "react-bootstrap";
+import { Navbar, Container, Nav } from "react-bootstrap";
 import navicon1 from '../assets/img/nav-icon1.svg';
 
 export const NavBar = () => {
