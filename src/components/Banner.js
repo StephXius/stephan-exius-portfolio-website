@@ -7,7 +7,7 @@ import headerimg from "../assets/img/header-img.svg";
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Frontend Developer", "Software Engineer"];
+    const toRotate = ["Frontend Engineer", "Software Engineer"];
     const [text,setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const period = 2000;
@@ -48,7 +48,7 @@ export const Banner = () => {
                     <Col xs={12} md={6} xl={7}>
                        <span className='tagline'>Welcome to my Portfolio</span>
                        <h1>{`Hi I'm Stephan `}<span className='wrap'>{text}</span></h1>
-                       <p>I am a senior college student who loves coding and is a aspiring Software Engineer.</p>
+                       <p>I am a senior college student who loves coding and is a aspiring Frontend Engineer.</p>
                        <button onClick={() => console.log('connect')}>Let's connect <ArrowRightCircle size={25}/></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
