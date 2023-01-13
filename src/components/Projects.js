@@ -50,7 +50,7 @@ export const Projects = () => {
                     <h2>Projects</h2>
                     <p>These are my projects that I have done recently. They were coded in HTML, CSS, JavaScript and React</p>
                     <Tab.Container id='projects-tab' defaultActiveKey='first'>
-                    <Nav variant="pills" defaultActiveKey="/home">
+                    <Nav variant="pills" className='nav-pills mb-5 justify-content-center align-items-center' id='pills-tab'>
                         <Nav.Item>
                             <Nav.Link eventKey='first'>Tab One</Nav.Link>
                         </Nav.Item>
@@ -76,9 +76,9 @@ export const Projects = () => {
                                 }
                             </Row>
                         </Tab.Pane>
-                        <Tab.Pane eventKey='second'>
+                        <Tab.Pane eventKey='second'> Work in Progress
                         </Tab.Pane>
-                        <Tab.Pane eventKey='third'></Tab.Pane> 
+                        <Tab.Pane eventKey='third'> Work in Progress </Tab.Pane> 
                     </Tab.Content>
                     </Tab.Container>
                 </Col>
