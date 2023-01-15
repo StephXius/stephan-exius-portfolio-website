@@ -2,6 +2,8 @@ import React from 'react'
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import navicon1 from '../assets/img/nav-icon1.svg';
+import { HashLink } from 'react-router-hash-link';
+import { BrowserRouter as Router } from "react-router-dom";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
@@ -26,6 +28,7 @@ export const NavBar = () => {
   }
 
     return (
+      <Router>
          <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
       <Container>
         <Navbar.Brand className = "navBrand" href="#home">Stephan Exius</Navbar.Brand>
@@ -42,10 +45,13 @@ export const NavBar = () => {
             <div className="social-icon">
               <a href="https://www.linkedin.com/in/stephan-exius-01953b156/"><img src={navicon1} alt="" /></a>
             </div>
-            <button className="vvd" onClick={() => console.log('connect')}><span>Let's connect      </span></button>
+            <HashLink to='#connect'>
+                <button className="vvd"><span>Let’s Connect</span></button>
+              </HashLink>
           </span>
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    </Router>
     )
 }  
