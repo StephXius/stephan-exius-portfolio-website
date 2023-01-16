@@ -4,6 +4,7 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import navicon1 from '../assets/img/nav-icon1.svg';
 import { HashLink } from 'react-router-hash-link';
 import { BrowserRouter as Router } from "react-router-dom";
+import navicon2 from '../assets/img/github-icon.png';
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
@@ -43,7 +44,8 @@ export const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="https://www.linkedin.com/in/stephan-exius-01953b156/"><img src={navicon1} alt="" /></a>
+              <a href="https://www.linkedin.com/in/stephan-exius-01953b156/"><img src={navicon1} alt="linkedin" /></a>
+              <a href="https://github.com/StephXius"><img src={navicon2} alt="github" /></a>
             </div>
             <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>
