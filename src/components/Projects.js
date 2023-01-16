@@ -2,9 +2,12 @@ import React from 'react';
 import { Container, Row, Col, Nav, Tab } from 'react-bootstrap';
 import { ProjectCard } from './ProjectCard';
 import colorSharp2 from '../assets/img/color-sharp2.png';
-import projImg1 from '../assets/img/project-img1.png';
-import projImg2 from '../assets/img/project-img2.png';
-import projImg3 from '../assets/img/project-img3.png';
+import clockImg from '../assets/img/25+5-clock-fcc-cover.jpg';
+import calcImg from '../assets/img/calculator-app-cover.jpg';
+import drumImg from '../assets/img/drum-machine-cover.jpg';
+import markImg from '../assets/img/my-react-markdown-previewer-cover.jpg';
+import quoteImg from '../assets/img/random-quote-generator-cover.jpg';
+import rpsImg from '../assets/img/rock-paper-scissors-cover.jpg';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -15,32 +18,32 @@ export const Projects = () => {
         {
             title: "25-5-clock-fcc",
             description: "Web Development",
-            imgUrl: projImg1,
+            imgUrl: clockImg,
           },
           {
             title: "calculator-app-react-fcc",
             description: "Web Development",
-            imgUrl: projImg2,
+            imgUrl: calcImg,
           },
           {
             title: "drum-machine-fcc",
             description: "Web Development",
-            imgUrl: projImg3,
+            imgUrl: drumImg,
           },
           {
             title: "my-react-markdown-previewer",
             description: "Web Development",
-            imgUrl: projImg1,
+            imgUrl: markImg,
           },
           {
             title: "random-quote-generator",
             description: "Web Development",
-            imgUrl: projImg2,
+            imgUrl: quoteImg,
           },
           {
             title: "rockpaperscissor",
             description: "Web Development",
-            imgUrl: projImg3,
+            imgUrl: rpsImg,
           },
     ];
 
