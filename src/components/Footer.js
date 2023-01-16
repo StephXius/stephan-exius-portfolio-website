@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import navicon1 from '../assets/img/nav-icon1.svg';
+import navicon2 from '../assets/img/github-icon.png';
 
 export const Footer = () => {
   return (
@@ -12,7 +13,8 @@ export const Footer = () => {
                 </Col>
                 <Col sm={6} className='text-center text-sm-end'>
                     <div className='social-icon'>
-                        <a href=''><img src={navicon1} /></a>
+                        <a href='https://www.linkedin.com/in/stephan-exius-01953b156/'><img src={navicon1} /></a>
+                        <a href='https://github.com/StephXius'><img src={navicon2} /></a>
                     </div>
                     <p>CopyRight 2023. All Right Reserved</p>
                 </Col>
